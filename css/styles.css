@@ -76,30 +76,29 @@ a {
 
 
 
-    .container>section:nth-child(2) {
+    .container section:first-of-type {
+        order: 1;
+    }
+
+    .container section:nth-of-type(2) {
         order: 2;
     }
 
-    .container>section:nth-child(3) {
-        order: 0;
-    }
-
-    .container>section:nth-child(4) {
-        /* order: 2; */
-    }
-
-    .container>section:nth-child(5) {
-        order: 3;
-    }
-
-    .container>section:nth-child(6) {
+    .container section:nth-of-type(3) {
         order: 4;
     }
 
-    .container>section:nth-child(7) {
-        orphans: 5;
+    .container section:nth-of-type(4) {
+        order: 3;
     }
 
+    .container section:nth-of-type(5) {
+        order: 5;
+    }
+
+    .container section:nth-of-type(6) {
+        order: 6;
+    }
 
 }
 
